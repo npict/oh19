@@ -1,0 +1,102 @@
+<!doctype HTML>
+<html>
+<!--<script>
+  window.location.href = "https://ictredcamp.github.io/";
+</script>
+	-->
+<!--<script src="aframe-ar.js"> </script>-->
+
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script><!-- for gltf 2.0 -->
+	
+<script>
+	THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
+</script>
+<head>
+	<style>
+		#arjsDebugUIContainer{
+			display : none;
+		}
+	</style>
+</head>
+	
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+	  
+	  <a-assets>
+		<a-asset-item id="doll" src="scene.gltf"></a-asset-item>
+		  <a-asset-item id="cube" src="Models/ninja.gltf"></a-asset-item>
+		  
+		  <a-asset-item id="knight" src="Models/knight.gltf"></a-asset-item>
+		  <a-asset-item id="mayan" src="Models/mayan.gltf"></a-asset-item>
+		  <a-asset-item id="centurion" src="Models/centurion.gltf"></a-asset-item>
+		  <a-asset-item id="ninja" src="Models/ninja.gltf"></a-asset-item>
+		  <a-asset-item id="viking" src="Models/viking.gltf"></a-asset-item>
+		  
+		<a-asset-item id="Ani" src="Text/ANI.gltf"></a-asset-item>
+		<a-asset-item id="All" src="Text/All5.gltf"></a-asset-item>
+		<a-asset-item id="Csf" src="Text/CSF.gltf"></a-asset-item>
+		<a-asset-item id="Fi" src="Text/FI.gltf"></a-asset-item>
+		<a-asset-item id="Imgd" src="Text/IMGD.gltf"></a-asset-item>
+		  <a-asset-item id="Ict" src="Text/ICT.gltf"></a-asset-item>
+		  <a-asset-item id="It" src="Text/IT.gltf"></a-asset-item>
+		  <a-asset-item id="CICTP" src="Text/CICTP.gltf"></a-asset-item>
+		
+	</a-assets>
+	  
+   
+
+	  <!-- Dud Marker1 -->
+	  <a-marker type='pattern' url='patterns2/spider_pattern-marker.patt'>
+	    <a-entity gltf-model="#ninja" animation-mixer
+		  position="0 1 0"
+		  scale="0.2 0.2 0.2"
+		      rotation="-90 0 0"></a-entity>    
+	</a-marker>
+	  
+
+	  <!-- Dud Marker2 -->
+	  <a-marker type='pattern' url='patterns2/ICT_logo_pattern-marker.patt'>
+	    <a-entity gltf-model="#mayan" animation-mixer
+		  position="0 1 0"
+		  scale="0.2 0.2 0.2"></a-entity>    
+	</a-marker>
+	  
+	  <!-- Dud Marker3 -->
+	  <a-marker type='pattern' url='patterns2/radio_pattern-marker.patt'>
+	    <a-entity gltf-model="#viking" animation-mixer
+		  position="0 1 0"
+		  scale="0.2 0.2 0.2"></a-entity>    
+	</a-marker>
+	  
+	  <!-- Dud Marker4 -->
+	  <a-marker type='pattern' url='patterns2/zebra_pattern-marker.patt'>
+	    <a-entity gltf-model="#knight" animation-mixer
+		  position="0 1 0"
+		  scale="0.2 0.2 0.2"></a-entity>    
+	</a-marker>
+	  
+	  <!-- Dud Marker5 -->
+	  <a-marker type='pattern' url='patterns2/unicon_pattern-marker.patt'>
+	    <a-entity gltf-model="#centurion" animation-mixer
+		  position="0 1 0"
+		  scale="0.2 0.2 0.2"></a-entity>    
+	</a-marker>
+	 
+	  
+	
+	  
+	  
+	  
+
+	  
+	  
+    <!-- add a simple camera -->
+    <a-entity camera></a-entity>
+	  
+	  
+  </a-scene>
+</body>
+</html>
