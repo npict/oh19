@@ -26,7 +26,8 @@
   <a-scene embedded arjs='sourceType: webcam;'>
 	  
 	  <a-assets>
-		<a-asset-item id="doll" src="scene.gltf"></a-asset-item>
+		  <a-asset-item id="blk" src="Models/OH.gltf"></a-asset-item>
+		<!--<a-asset-item id="doll" src="scene.gltf"></a-asset-item>
 		  <a-asset-item id="cube" src="Models/ninja.gltf"></a-asset-item>
 		  
 		  <a-asset-item id="knight" src="Models/knight.gltf"></a-asset-item>
@@ -42,56 +43,18 @@
 		<a-asset-item id="Imgd" src="Text/IMGD.gltf"></a-asset-item>
 		  <a-asset-item id="Ict" src="Text/ICT.gltf"></a-asset-item>
 		  <a-asset-item id="It" src="Text/IT.gltf"></a-asset-item>
-		  <a-asset-item id="CICTP" src="Text/CICTP.gltf"></a-asset-item>
+		  <a-asset-item id="CICTP" src="Text/CICTP.gltf"></a-asset-item>-->
 		
 	</a-assets>
 	  
-   
 
-	  <!-- Dud Marker1 -->
-	  <a-marker type='pattern' url='patterns2/spider_pattern-marker.patt'>
-	    <a-entity gltf-model="#ninja" animation-mixer
+	  <a-marker type='pattern' url='Patterns/ICT_logo_pattern_marker.patt'>
+	    <a-entity gltf-model="#blk" animation-mixer
 		  position="0 1 0"
 		  scale="0.2 0.2 0.2"
 		      rotation="-90 0 0"></a-entity>    
 	</a-marker>
-	  
-
-	  <!-- Dud Marker2 -->
-	  <a-marker type='pattern' url='patterns2/ICT_logo_pattern-marker.patt'>
-	    <a-entity gltf-model="#mayan" animation-mixer
-		  position="0 1 0"
-		  scale="0.2 0.2 0.2"></a-entity>    
-	</a-marker>
-	  
-	  <!-- Dud Marker3 -->
-	  <a-marker type='pattern' url='patterns2/radio_pattern-marker.patt'>
-	    <a-entity gltf-model="#viking" animation-mixer
-		  position="0 1 0"
-		  scale="0.2 0.2 0.2"></a-entity>    
-	</a-marker>
-	  
-	  <!-- Dud Marker4 -->
-	  <a-marker type='pattern' url='patterns2/zebra_pattern-marker.patt'>
-	    <a-entity gltf-model="#knight" animation-mixer
-		  position="0 1 0"
-		  scale="0.2 0.2 0.2"></a-entity>    
-	</a-marker>
-	  
-	  <!-- Dud Marker5 -->
-	  <a-marker type='pattern' url='patterns2/unicon_pattern-marker.patt'>
-	    <a-entity gltf-model="#centurion" animation-mixer
-		  position="0 1 0"
-		  scale="0.2 0.2 0.2"></a-entity>    
-	</a-marker>
-	 
-	  
-	
-	  
-	  
-	  
-
-	  
+  
 	  
     <!-- add a simple camera -->
     <a-entity camera></a-entity>
