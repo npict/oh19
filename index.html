@@ -54,12 +54,18 @@
 		  scale="0.02 0.02 0.02"
 		      rotation="-45 0 0"></a-entity>   
 		  <a-cone 
-			  position="0 1.5 -0.5" 
+			  position="0 1.0 -0.5" 
 			  rotation="-45 0 0"
 			  color="red" 
 			  radius-bottom="0.0008" 
 			  height="0.3"
-			  radius-top="0.15"></a-cone>
+			  radius-top="0.15">
+			  <a-animation attribute="position"
+				       direction="alternate"
+				       dur="5000"
+				       to="0 1.5 -0.5"
+				       repeat="indefinite"></a-animation>
+		  </a-cone>
 	</a-marker>
   
 	  
