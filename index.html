@@ -53,6 +53,7 @@
 		  position="0 1 0"
 		  scale="0.02 0.02 0.02"
 		      rotation="-45 0 0"></a-entity>   
+		  <!-- lift landing -->
 		  <a-cone 
 			  position="0 1 -0.25" 
 			  rotation="-45 0 0"
@@ -65,6 +66,21 @@
 				       dur="1000"
 				       easing="ease-sine"
 				       to="0 1.025 -0.5"
+				       repeat="indefinite"></a-animation>
+		  </a-cone>
+		  <!-- csf -->
+		  <a-cone 
+			  position="-0.25 1 -0.25" 
+			  rotation="-45 0 0"
+			  color="red" 
+			  radius-bottom="0.0008" 
+			  height="0.3"
+			  radius-top="0.15">
+			  <a-animation attribute="position"
+				       direction="alternate"
+				       dur="1000"
+				       easing="ease-sine"
+				       to="-0.25 1.025 -0.5"
 				       repeat="indefinite"></a-animation>
 		  </a-cone>
 	</a-marker>
